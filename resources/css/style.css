@@ -120,3 +120,23 @@ p{
   color:black;
   display: flex;
 }
+footer{
+  background-color: black;
+  margin-top: 4rem;
+}
+.footer-box{
+  display: flex;
+  background-color: black;
+  padding: 5rem 0;
+}
+.footer-box h4{
+  text-align: left;
+}
+@media screen and (min-width: 480px) and (max-width : 768px) {
+  .LT{
+    width: 35%;
+  }
+  .gallery-labels{
+    width: 47%;
+  }
+}

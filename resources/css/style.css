@@ -7,14 +7,21 @@ body{
   font-size: 1rem;
   color: white;
 }
+
+@media only screen and (min-width:1024px;){
+  .body:{
+    font-size: 16px;
+  }
+}
+
 .container{
-  align-items: center;
   margin: 0 auto;
   width: 960px;
 }
 header{
   background-color: black;
   color:white;
+  align-items: center;
 }
 
 #logo{
@@ -25,6 +32,7 @@ header{
 height: 1.5rem;
 margin-left: 0.5rem;
 margin-right: 1rem;
+margin-top: .4rem;
 }
 #logo span{
 padding-top: .66rem;
@@ -62,20 +70,32 @@ padding-bottom: .66rem;
 }
 nav{
   background-color: firebrick;
+  padding: .75rem 0;
+
+}
+nav .mobile{
+  display: none;
 }
 .list{
   display: flex;
   justify-content:space-between;
-  padding: .75rem 0;
+}
+
+@media screen and (max-width : 1024px) {
+  nav .mobile{
+    display: block;
+    text-align: center;
+  }
+
 }
 .gallery{
 }
 .gallery-box{
   display: flex;
   justify-content: space-between;
-  margin: 3rem 0;
+  margin: 3rem 0 0 0;
 }
-.gallery-labels{
+.labels{
   width: 30%;
 
 }
@@ -98,9 +118,20 @@ img{
   background-color: black;
   padding: .25rem 0;
 }
+
+@media screen and (max-width : 1024px) {
+  .labels{
+    width: 47%;
+  }
+  .glasses{
+    display: none;
+  }
+}
+
 .locationtime{
   display: flex;
   justify-content: space-between;
+  margin-top: 3rem;
 }
 
 .LT{
@@ -132,11 +163,15 @@ footer{
 .footer-box h4{
   text-align: left;
 }
-@media screen and (min-width: 480px) and (max-width : 768px) {
+@media screen and (max-width : 1024px) {
   .LT{
     width: 35%;
   }
   .gallery-labels{
     width: 47%;
   }
+  .list{
+    display: none;
+  }
+
 }
